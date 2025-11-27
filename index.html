@@ -2,87 +2,87 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>P5.js Assignment Showcase</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>P5.js Assignments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600&display=swap" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
+      background: linear-gradient(135deg, #eef1ff, #dce3ff);
       font-family: 'Pretendard', sans-serif;
-      background: linear-gradient(145deg, #f6f7ff, #e7ebff);
+      padding: 40px 0;
       text-align: center;
-      padding: 60px 20px;
     }
-
     h1 {
-      font-size: 36px;
-      margin-bottom: 40px;
-      color: #2a2a2a;
-      font-weight: 600;
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #1a1a1a;
     }
-
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-      max-width: 650px;
-      margin: 0 auto 40px;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 32px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
     }
-
     .card {
       background: white;
-      padding: 30px 10px;
-      border-radius: 18px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      font-size: 20px;
-      font-weight: 600;
-      transition: 0.2s;
-      cursor: pointer;
+      padding: 16px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
       border: 1px solid #eee;
+      transition: all .2s;
     }
-
     .card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.12);
     }
-
     iframe {
-      margin-top: 40px;
       width: 100%;
-      max-width: 850px;
-      height: 600px;
+      height: 450px;
       border: none;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      display: none;
+      border-radius: 10px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #333;
     }
   </style>
 </head>
 <body>
 
-  <h1>P5.js Assignment Showcase</h1>
+  <h1>P5.js 과제 모음</h1>
 
   <div class="grid">
-    <div class="card" onclick="showFrame(1)">과제 1</div>
-    <div class="card" onclick="showFrame(4)">과제 4</div>
-    <div class="card" onclick="showFrame(2)">과제 2</div>
-    <div class="card" onclick="showFrame(3)">과제 3</div>
+
+    <!-- 과제 1 -->
+    <div class="card">
+      <div class="title">과제 1</div>
+      <iframe src="https://editor.p5js.org/ksaj0725/full/KDTGxkIqr"></iframe>
+    </div>
+
+    <!-- 과제 4 -->
+    <div class="card">
+      <div class="title">과제 4</div>
+      <iframe src="https://editor.p5js.org/ksaj0725/full/KDTGxkIqr"></iframe>
+    </div>
+
+    <!-- 과제 2 -->
+    <div class="card">
+      <div class="title">과제 2</div>
+      <iframe src="https://editor.p5js.org/ksaj0725/full/_Z1GOpqLk"></iframe>
+    </div>
+
+    <!-- 과제 3 -->
+    <div class="card">
+      <div class="title">과제 3</div>
+      <iframe src="https://editor.p5js.org/ksaj0725/full/XlsEZOzlN"></iframe>
+    </div>
+
   </div>
-
-  <!-- iframe 4개 (sketches 링크 적용됨) -->
-  <iframe id="frame1" src="https://editor.p5js.org/ksaj0725/sketches/T0tJNzlBS"></iframe>
-  <iframe id="frame2" src="https://editor.p5js.org/ksaj0725/sketches/_Z1GOpqLk"></iframe>
-  <iframe id="frame3" src="https://editor.p5js.org/ksaj0725/sketches/XlsEZOzlN"></iframe>
-  <iframe id="frame4" src="https://editor.p5js.org/ksaj0725/sketches/KDTGxkIqr"></iframe>
-
-  <script>
-    function showFrame(num) {
-      document.querySelectorAll("iframe").forEach(f => f.style.display = "none");
-      document.getElementById("frame" + num).style.display = "block";
-    }
-  </script>
 
 </body>
 </html>
