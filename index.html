@@ -61,14 +61,21 @@
     .link:hover {
       text-decoration: underline;
     }
-    @media (max-width: 800px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-      .gif-container img {
-        height: 220px;
-      }
-    }
+
+.card1 { order: 1; }
+.card2 { order: 3; }
+.card3 { order: 4; }
+.card4 { order: 2; }
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .gif-container img {
+    height: 220px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -76,24 +83,15 @@
   <h1>P5.js 과제 모음</h1>
 
   <div class="grid">
+    <div class="card card1">
+      <div class="title">과제 1</div>
+      <div class="gif-container">
+        <img src="과제 1/과제 1.png" alt="과제 1">
+      </div>
+      <a class="link" href="과제 1/index_1.html" target="_blank">작품 1 전체 보기</a>
+    </div>
 
-<div class="card">
-  <div class="title">과제 1</div>
-  <div class="gif-container">
-    <img src="과제 1/과제 1.png" alt="과제 1">
-  </div>
-  <a class="link" href="과제 1/index_1.html" target="_blank">작품 1 전체 보기</a>
-</div>
-
-<div class="card">
-  <div class="title">과제 4</div>
-  <div class="gif-container">
-    <img src="과제 4/과제 4.gif" alt="과제 4">
-  </div>
-  <a class="link" href="과제 4/index_4.html" target="_blank">작품 4 전체 보기</a>
-</div>
-
-<div class="card">
+<div class="card card2">
   <div class="title">과제 2</div>
   <div class="gif-container">
     <img src="과제 2/과제 2.png" alt="과제 2">
@@ -101,7 +99,7 @@
   <a class="link" href="과제 2/index_2.html" target="_blank">작품 2 전체 보기</a>
 </div>
 
-<div class="card">
+<div class="card card3">
   <div class="title">과제 3</div>
   <div class="gif-container">
     <img src="과제 3/과제 3.gif" alt="과제 3">
@@ -109,6 +107,14 @@
   <a class="link" href="과제 3/index_3.html" target="_blank">작품 3 전체 보기</a>
 </div>
 
+<div class="card card4">
+  <div class="title">과제 4</div>
+  <div class="gif-container">
+    <img src="과제 4/과제 4.gif" alt="과제 4">
+  </div>
+  <a class="link" href="과제 4/index_4.html" target="_blank">작품 4 전체 보기</a>
+</div>
+    
   </div>
 
 </body>
