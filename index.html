@@ -29,7 +29,7 @@
     }
     .card {
       background: white;
-      padding: 20px;
+      padding: 16px;
       border-radius: 14px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
       border: 1px solid #eee;
@@ -41,8 +41,8 @@
     }
     .gif-container img {
       width: 100%;
-      height: 500px; /* 이미지 높이 키움 */
-      object-fit: cover; /* 이미지 비율 유지하면서 채움 */
+      height: 350px; /* 화면에 두 개 같이 보이도록 높이 줄임 */
+      object-fit: contain; /* 이미지 비율 유지하면서 여백 생길 수 있음 */
       border-radius: 10px;
     }
     .title {
@@ -69,8 +69,6 @@
 
   <div class="grid">
 
-```
-<!-- 과제 1 -->
 <div class="card">
   <div class="title">과제 1</div>
   <div class="gif-container">
@@ -79,7 +77,6 @@
   <a class="link" href="과제 1/index_1.html" target="_blank">작품 보기</a>
 </div>
 
-<!-- 과제 4 -->
 <div class="card">
   <div class="title">과제 4</div>
   <div class="gif-container">
@@ -88,7 +85,6 @@
   <a class="link" href="과제 4/index_4.html" target="_blank">작품 보기</a>
 </div>
 
-<!-- 과제 2 -->
 <div class="card">
   <div class="title">과제 2</div>
   <div class="gif-container">
@@ -97,7 +93,6 @@
   <a class="link" href="과제 2/index_2.html" target="_blank">작품 보기</a>
 </div>
 
-<!-- 과제 3 -->
 <div class="card">
   <div class="title">과제 3</div>
   <div class="gif-container">
@@ -105,7 +100,6 @@
   </div>
   <a class="link" href="과제 3/index_3.html" target="_blank">작품 보기</a>
 </div>
-```
 
   </div>
 
